@@ -4,7 +4,7 @@ import google.generativeai as genai
 app = Flask(__name__)
 
 # Configure Google Gemini AI
-GENAI_API_KEY = "AIzaSyAQYLivLfx7FwNmi5U9zZQAfQjBpltO6K0"  # Replace with a valid key
+GENAI_API_KEY = " "  # Replace with a valid key
 genai.configure(api_key=GENAI_API_KEY)
 
 @app.route('/')
@@ -62,3 +62,4 @@ def generate_plan():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
